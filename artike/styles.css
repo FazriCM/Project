@@ -279,8 +279,7 @@ padding: 0px 50px;
 .hamburger {
   display: block; /* Show hamburger on small screens */
 
-}
-
+}}
 
 
 /* Atur tinggi maksimal untuk gambar di kartu */
@@ -511,4 +510,4 @@ footer {
 .footer-content p {
   margin-top: 10px;
   font-size: 16px;
-}}
+}
