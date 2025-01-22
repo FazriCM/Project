@@ -3,163 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KULINER</title>
+    <title>Artikel dengan Modal</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <div>
-        <nav class="navbar">
-            <div class="navbar-container container">
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #333;" style="background-color: #333; height: 80px; font-size: 25px;">
+        <div class="container">
+          <a class="navbar-brand" href=".././index.html">
+            <img src=".././logo.png" alt="Logo" class="logo">
+          </a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse mt-4" id="navbarNav">
+            <ul class="navbar-nav ms-auto" style="font-size: 20px; margin-top: -15px; padding-left: 20px;">
+              <li class="nav-item">
+                <a class="nav-link text-light"  style="background-color: #333; " href=".././index.html">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" style="background-color: #333;" href="#about">About Bali</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" style="background-color: #333;" href="../#contact-section">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" style="background-color: #333;" href=".././kuliner/index.html">Kuliner</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" style="background-color: #333;" href=".././budaya/index.html">Budaya</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" style="background-color: #333;" href=".././artike/index.html">Akomodasi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container mt-4">       
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-5 " data-bs-toggle="modal" data-bs-target="#modal1">
+                    <img src="./aset-kuliner/bututu.webp" alt="Image 1" class="card-img-top"> <!--foto di ambil dari google Image-->
+                    <h5 class="card-title-h5">Ayam Betutu</h5>
+                    <p class="card-text">Click Untuk Mengetahu Tentang Kuliner Ini!!</p>
                 </div>
-                <ul class="menu-items">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../#about">About</a></li>
-                    <li><a href="../#contact-sectionx">Contact</a></li>
-                    <li><a href=".././kuliner/index.html">Kuliner</a></li>
-                    <li><a href=".././budaya/index.html">Budaya</a></li>
-                    <li><a href=".././artike/index.html">Akomodasi</a></li>
-
-                </ul>
-                <img src="../logo.png" alt="" class="logo">
             </div>
-        </nav>
-    </div>
-
-    <div class="container">
-        <div class="card">
-            <img src="./aset-kuliner/bututu.webp" alt="Card 1">
-            <div class="card-content">
-                <h3>Ayam Btutu</h3>
-                <p>Click Show More untuk Informasi selanjutnya</p>
-                <button data-modal="modal1">Show More</button>
+            <div class="col-md-4">
+                <div class="card p-5" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <img src="./aset-kuliner/bengil.webp" alt="Image 2" class="card-img-top"><!--foto di ambil dari google Image-->
+                    <h5 class="card-title-h5">Bebek bengil</h5>
+                    <p class="card-text">Click Untuk Mengetahu Tentang Kuliner Ini!!</p>
+                </div>
             </div>
-        </div>
-
-        <div class="card">
-            <img src="./aset-kuliner/campurbali.webp" alt="Card 2">
-            <div class="card-content">
-                <h3>Nasi Campur Bali</h3>
-                <p>Click Show More Untuk Informasi Selanjutnya </p>
-                <button data-modal="modal2">Show More</button>
+            <div class="col-md-4">
+                <div class="card p-5" data-bs-toggle="modal" data-bs-target="#modal3">
+                    <img src="./aset-kuliner/campurbali.webp" alt="Image 3" class="card-img-top"><!--foto di ambil dari google Image-->
+                    <h5 class="card-title-h5">Nasi Campuer Bali</h5>
+                    <p class="card-text">Click Untuk Mengetahu Tentang Kuliner Ini!!</p>
+                </div>
             </div>
-        </div>
-
-        <div class="card">
-            <img src="./aset-kuliner/bengil.webp" alt="Card 3">
-            <div class="card-content">
-                <h3>Bebek Bengil</h3>
-                <p>Click Show More Untuk Informasi Selanjutnya </p>
-                <button data-modal="modal3">Show More</button>
+            <div class="col-md-4">
+                <div class="card p-5" data-bs-toggle="modal" data-bs-target="#modal4">
+                    <img src="./aset-kuliner/cantok.avif" alt="Image 3" class="card-img-top"><!--foto di ambil dari google Image-->
+                    <h5 class="card-title-h5">Tipat Contok</h5>
+                    <p class="card-text">Click Untuk Mengetahu Tentang Kuliner Ini!!</p>
+                </div>
             </div>
-        </div>
-
-        <div class="card">
-            <img src="./aset-kuliner/cantok.avif" alt="Card 4">
-            <div class="card-content">
-                <h3>Tipat Contok</h3>
-                <p>Click Show More Untuk Informasi Selanjutnya </p>
-                <button data-modal="modal4">Show More</button>
+            <div class="col-md-4">
+                <div class="card p-5" data-bs-toggle="modal" data-bs-target="#modal5">
+                    <img src="./aset-kuliner/sambel.avif" alt="Image 3" class="card-img-top"><!--foto di ambil dari google Image-->
+                    <h5 class="card-title-h5">Bulung Bunih Kuah Pindang</h5>
+                    <p class="card-text">Click Untuk Mengetahu Tentang Kuliner Ini!!</p>
+                </div>
             </div>
-        </div>
-
-        <div class="card">
-            <img src="./aset-kuliner/sambel.avif" alt="Card 5">
-            <div class="card-content">
-                <h3>Bulung Benih Kuah Pindang</h3>
-                <p>Click Show More Untuk Informasi Selanjutnya </p>
-                <button data-modal="modal5">Show More</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./aset-kuliner/pelncing.avif" alt="Card 6">
-            <div class="card-content">
-                <h3>Sate Plecing</h3>
-                <p>Click Show More Untuk Informasi Selanjutnya </p>
-                <button data-modal="modal6">Show More</button>
+            <div class="col-md-4">
+                <div class="card p-5" data-bs-toggle="modal" data-bs-target="#modal6">
+                    <img src="./aset-kuliner/pelncing.avif" alt="Image 3" class="card-img-top"><!--foto di ambil dari google Image-->
+                    <h5 class="card-title-h5">Sate Plecing</h5>
+                    <p class="card-text">Click Untuk Mengetahu Tentang Kuliner Ini!!</p>
+                </div>
             </div>
         </div>
     </div>
-<!-- modal -->
-    <div class="modal" id="modal1">
-        <div class="modal-content">
-            <h2>Ayam Betutu</h2>
-            <p>Ayam Betutu, asli dari Gilimanuk, Bali, adalah hidangan ayam 
-                yang dimasak dengan rempah-rempah pedas hingga teksturnya menjadi sangat empuk.
-                 Dengan popularitas makanan pedas yang meningkat, Ayam Betutu menawarkan peluang besar 
-                 sebagai menu utama di restoran. Alternatifnya, Anda bisa menggunakan bebek untuk variasi yang lebih kaya rasa.
-                 Ada juga opsi untuk menambahkan kuah, yang bisa menambah dimensi baru pada hidangan ini di restoran Anda. </p>
-            <button class="close-modal">Close</button>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel1">Ayam Betutu
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="content">
+                        <p>Ayam Betutu, asli dari Gilimanuk, Bali, adalah hidangan ayam yang dimasak dengan rempah-rempah pedas hingga teksturnya menjadi sangat empuk. Dengan popularitas makanan pedas yang meningkat, Ayam Betutu menawarkan peluang besar sebagai menu utama di restoran. Alternatifnya, Anda bisa menggunakan bebek untuk variasi yang lebih kaya rasa. Ada juga opsi untuk menambahkan kuah, yang bisa menambah dimensi baru pada hidangan ini di restoran Anda.</p>
+                       
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="modal" id="modal2">
-        <div class="modal-content">
-            <h2>Nasi Campur Bali</h2>
-            <p>Nasi Campur Bali menonjol di antara variasi nasi campur lain dengan kombinasi
-                 unik dari suwiran daging, urap, dan sate lilit. Kekhasan dari lauk-pauk ini 
-                 menawarkan pengalaman rasa yang tidak hanya kaya tetapi juga memikat, ideal 
-                 untuk ditawarkan sebagai menu utama di restoran Anda.</p>
-            <button class="close-modal">Close</button>
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+        <div class="modal-dialog  ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel2">Bebek Bengil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center"                   
+                 <div class="content">
+                        <p>Dikenal juga sebagai 'Dirty Duck', Bebek Bengil adalah hidangan bebek goreng yang berasal dari Ubud, Bali. Bebek ini unik karena disajikan dengan diberi bumbu tabur khas yang memberikan rasa yang mendalam dan nikmat. Hidangan ini paling sempurna disajikan dengan nasi putih hangat dan aneka sambal, menjanjikan kepuasan bagi para penikmat kuliner yang mencari keautentikan dalam makanan tradisional khas Bali.</p>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
 
-    <div class="modal" id="modal3">
-        <div class="modal-content">
-            <h2>Bebek Bengil</h2>
-            <p>Dikenal juga sebagai 'Dirty Duck', Bebek Bengil adalah hidangan bebek goreng yang berasal dari Ubud, 
-                Bali. Bebek ini unik karena disajikan dengan diberi bumbu tabur khas yang memberikan rasa yang 
-                mendalam dan nikmat. Hidangan ini paling sempurna disajikan dengan nasi putih hangat dan aneka sambal,
-                 menjanjikan kepuasan bagi para penikmat kuliner yang mencari keautentikan dalam makanan tradisional khas Bali.
-                 </p>
-            <button class="close-modal">Close</button>
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog  ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel3">Nasi Campur Bali</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center"
+                    <div class="content">
+                        <p>Nasi Campur Bali menonjol di antara variasi nasi campur lain dengan kombinasi unik dari suwiran daging, urap, dan sate lilit. Kekhasan dari lauk-pauk ini menawarkan pengalaman rasa yang tidak hanya kaya tetapi juga memikat, ideal untuk ditawarkan sebagai menu utama di restoran Anda.</p>
+                       
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-
-    <div class="modal" id="modal4">
-        <div class="modal-content">
-            <h2>Tipat Contok</h2>
-            <p>Tipat Cantok, sering disandingkan dengan lotek karena tampilannya yang mirip, menawarkan perbedaan dalam isian sayuran dan sajian
-                 bumbu kacang pedas yang menjadi ciri khasnya. Sebagai pemilik restoran, Anda memiliki peluang untuk berinovasi dengan bumbu yang
-                  lebih modern atau unik, menarik pelanggan yang mencari variasi dalam rasa tradisional.
-                 </p>
-            <button class="close-modal">Close</button>
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog  ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel3">Tipat Contok</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center"
+                    <div class="content"style="font-family: papyrus;">
+                        <p>Tipat Cantok, sering disandingkan dengan lotek karena tampilannya yang mirip, menawarkan perbedaan dalam isian sayuran dan sajian bumbu kacang pedas yang menjadi ciri khasnya. Sebagai pemilik restoran, Anda memiliki peluang untuk berinovasi dengan bumbu yang lebih modern atau unik, menarik pelanggan yang mencari variasi dalam rasa tradisional.</p>
+                       
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
-
-    <div class="modal" id="modal5">
-        <div class="modal-content">
-            <h2>Bulung Benih Kuah Pindang</h2>
-            <p>Dikenal pula sebagai Rujak Bulung, hidangan ini menggunakan rumput laut sebagai bahan utama dan
-                 disiram dengan kuah pindang yang segar dan pedas. Bulung Buni Kuah Pindang adalah pilihan yang 
-                 sangat baik untuk restoran di luar Bali, mengingat popularitas dan keunikan rasanya yang tinggi 
-                 namun jarang ditemukan, memberikan keunikan bagi menu di restoran Anda.
-                 </p>
-            <button class="close-modal">Close</button>
+    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog  ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel3">Bulung Benih Kuah Pindang</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="content">
+                        <p>Dikenal pula sebagai Rujak Bulung, hidangan ini menggunakan rumput laut sebagai bahan utama dan disiram dengan kuah pindang yang segar dan pedas. Bulung Buni Kuah Pindang adalah pilihan yang sangat baik untuk restoran di luar Bali, mengingat popularitas dan keunikan rasanya yang tinggi namun jarang ditemukan, memberikan keunikan bagi menu di restoran Anda.</p>
+                       
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="modal" id="modal6">
-        <div class="modal-content">
-            <h2>Sate Plecing</h2>
-            <p>Berbeda dengan sate pada umumnya, sate plecing merupakan sate khas Singaraja,
-                 Bali. Bahan utamanya bisa berupa daging, ayam, atau ikan. Keunikannya karena
-                  disajikan bersama sambal plecing, yaitu dibuat dari cabai rawit, tomat, terasi
-                  , dan jeruk limau. Sambal ini memberi cita rasa pedas, kecut, dan segar yang menyelimuti 
-                  sate dengan bumbu sederhana ini. Tujuannya agar cita rasa asli tetap menonjol namun tetap
-                   sempurna saat disantap dengan sambal plecing.
-
-                Menyajikan sate plecing khas Singaraja sebagai main course tentu akan memberikan 
-                pengalaman kuliner eksotis khas pulau Dewata pada konsumen. Anda bisa memberikan pilihan
-                 jenis sate pada tamu seperti daging sapi atau daging ayam. Sajikan di atas ceramic grill 
-                 plate untuk memberi sentuhan mewah.    </p>
-            <button class="close-modal">Close</button>
+    <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+        <div class="modal-dialog  ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel3">Sate Plecing</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="content">
+                        <p>Berbeda dengan sate pada umumnya, sate plecing merupakan sate khas Singaraja, Bali. Bahan utamanya bisa berupa daging, ayam, atau ikan. Keunikannya karena disajikan bersama sambal plecing, yaitu dibuat dari cabai rawit, tomat, terasi , dan jeruk limau. Sambal ini memberi cita rasa pedas, kecut, dan segar yang menyelimuti sate dengan bumbu sederhana ini. Tujuannya agar cita rasa asli tetap menonjol namun tetap sempurna saat disantap dengan sambal plecing. Menyajikan sate plecing khas Singaraja sebagai main course tentu akan memberikan pengalaman kuliner eksotis khas pulau Dewata pada konsumen. Anda bisa memberikan pilihan jenis sate pada tamu seperti daging sapi atau daging ayam. Sajikan di atas ceramic grill plate untuk memberi sentuhan mewah.
+                            </p>
+                       
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 
     <footer>
         <div class="rounded-social-buttons">
@@ -175,9 +230,5 @@
           <p>&copy; 2025 Explore Bali. All rights reserved.</p>
         </div>
       </footer>
-
-    <script src="index.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-   
 </body>
 </html>
